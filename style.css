@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #101010;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para a seção de acesso rápido */
+.quick-access {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #800000;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.quick-access a {
+  background-color: #a52a2a;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.quick-access a:hover {
+  background-color: #8B0000;
+  transform: translateY(-2px);
+}
+
+/* Estilo para a página de introdução */
+.intro-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #222222;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.intro-content {
+  max-width: 50%;
+}
+
+.intro-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.red-text {
+  color: #8B0000;
+}
+
+.intro-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8B0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #a52a2a;
+  transform: translateY(-2px);
+}
+
+/* Estilo para a imagem do esqueleto */
+.skeleton-image img {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Estilo para a seção dos sistemas */
+.systems-section {
+  background-color: #f0f0f0;
+  padding: 40px;
+  color: #333333;
+}
+
+.systems-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.system {
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.system h3 {
+  font-size: 24px;
+  color: #8B0000;
+  margin-bottom: 10px;
+}
+
+.system img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.system img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #101010;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .intro-page {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .skeleton-image img {
+      max-width: 100%;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quick-access {
+      flex-direction: column;
+    }
+  
+    .quick-access a {
+      margin-bottom: 10px;
+    }
+  }
+
+  
+  
+  
